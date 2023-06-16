@@ -14,6 +14,7 @@
         android:layout_height="24dp"
         android:layout_marginStart="25dp"
         android:layout_marginTop="35dp"
+        android:onClick="onBackPressed"
         android:background="@drawable/outline_arrow_back_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -53,10 +54,10 @@
             android:id="@+id/ship_logo"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_marginStart="164dp"
             android:layout_marginTop="28dp"
             android:background="@drawable/background_ship_logo"
             android:src="@drawable/ship"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -64,6 +65,7 @@
             android:id="@+id/tv_name_tittle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:fontFamily="@font/ptreguler"
             android:gravity="center_horizontal"
             android:text="NAME"
@@ -71,9 +73,10 @@
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ship_logo"
-            app:layout_constraintVertical_bias="0.04" />
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/textView"
@@ -90,9 +93,8 @@
 
         <TextView
             android:id="@+id/tv_mmsi"
-            android:layout_width="121dp"
+            android:layout_width="wrap_content"
             android:layout_height="19dp"
-            android:layout_marginStart="272dp"
             android:layout_marginTop="190dp"
             android:layout_marginEnd="25dp"
             android:fontFamily="@font/ptreguler"
@@ -100,14 +102,13 @@
             android:textColor="@color/grey_font"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="121dp"
             android:layout_height="19dp"
-            android:layout_marginStart="24dp"
+            android:layout_marginStart="25dp"
             android:layout_marginTop="31dp"
             android:fontFamily="@font/ptreguler"
             android:text="@string/imo"
@@ -118,9 +119,8 @@
 
         <TextView
             android:id="@+id/tv_imo"
-            android:layout_width="121dp"
+            android:layout_width="wrap_content"
             android:layout_height="19dp"
-            android:layout_marginStart="272dp"
             android:layout_marginTop="31dp"
             android:layout_marginEnd="25dp"
             android:fontFamily="@font/ptreguler"
@@ -128,14 +128,13 @@
             android:textColor="@color/grey_font"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_mmsi" />
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="121dp"
             android:layout_height="19dp"
-            android:layout_marginStart="24dp"
+            android:layout_marginStart="25dp"
             android:layout_marginTop="31dp"
             android:fontFamily="@font/ptreguler"
             android:text="@string/name"
@@ -146,9 +145,8 @@
 
         <TextView
             android:id="@+id/tv_name"
-            android:layout_width="121dp"
+            android:layout_width="wrap_content"
             android:layout_height="19dp"
-            android:layout_marginStart="272dp"
             android:layout_marginTop="31dp"
             android:layout_marginEnd="25dp"
             android:fontFamily="@font/ptreguler"
@@ -156,7 +154,6 @@
             android:textColor="@color/grey_font"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_imo" />
 
         <TextView
@@ -174,9 +171,8 @@
 
         <TextView
             android:id="@+id/tv_builder"
-            android:layout_width="121dp"
+            android:layout_width="wrap_content"
             android:layout_height="19dp"
-            android:layout_marginStart="272dp"
             android:layout_marginTop="31dp"
             android:layout_marginEnd="25dp"
             android:fontFamily="@font/ptreguler"
@@ -184,7 +180,6 @@
             android:textColor="@color/grey_font"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_name" />
 
         <TextView
@@ -202,9 +197,8 @@
 
         <TextView
             android:id="@+id/tv_place_of_build"
-            android:layout_width="121dp"
+            android:layout_width="wrap_content"
             android:layout_height="19dp"
-            android:layout_marginStart="272dp"
             android:layout_marginTop="31dp"
             android:layout_marginEnd="25dp"
             android:fontFamily="@font/ptreguler"
@@ -212,7 +206,6 @@
             android:textColor="@color/grey_font"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_builder" />
 
         <TextView
@@ -229,9 +222,8 @@
 
         <TextView
             android:id="@+id/tv_year_build"
-            android:layout_width="121dp"
+            android:layout_width="wrap_content"
             android:layout_height="19dp"
-            android:layout_marginStart="272dp"
             android:layout_marginTop="31dp"
             android:layout_marginEnd="25dp"
             android:fontFamily="@font/ptreguler"
@@ -239,7 +231,6 @@
             android:textColor="@color/grey_font"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_place_of_build" />
 
         <Button
@@ -247,15 +238,18 @@
             android:layout_width="130dp"
             android:layout_height="40dp"
             android:layout_marginTop="356dp"
+            android:layout_marginBottom="40dp"
             android:backgroundTint="@color/blue_secondary"
             android:fontFamily="@font/ptreguler"
             android:text="@string/track_detail"
             android:textColor="@color/white"
             android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_name_tittle" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_name_tittle"
+            app:layout_constraintVertical_bias="1.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

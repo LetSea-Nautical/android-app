@@ -14,7 +14,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="210dp"
+        android:layout_height="110dp"
         android:background="@color/blue_list"
         android:padding="0dp">
 
@@ -22,134 +22,66 @@
             android:id="@+id/logo_ship"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_marginEnd="24dp"
+            android:layout_marginStart="16dp"
             android:background="@drawable/background_ship_logo"
             android:scaleType="centerCrop"
             android:src="@drawable/ship"
             card_view:layout_constraintBottom_toBottomOf="parent"
-            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
             card_view:layout_constraintTop_toTopOf="parent"
-            card_view:layout_constraintVertical_bias="0.216" />
+            card_view:layout_constraintVertical_bias="0.466" />
 
         <TextView
             android:id="@+id/tv_item_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginStart="108dp"
             android:fontFamily="@font/ptbold"
             android:textColor="@color/yellow_name"
-            android:textSize="16sp"
+            android:textSize="15sp"
             card_view:layout_constraintStart_toStartOf="parent"
-            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintTop_toTopOf="@+id/logo_ship"
             tools:text="Name" />
 
         <TextView
-            android:id="@+id/tv_atd"
+            android:id="@+id/tv_item_mmsi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="56dp"
-            android:fontFamily="@font/ptreguler"
-            android:text="@string/atd"
+            android:layout_marginStart="108dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/ptbold"
             android:textColor="@color/grey_font"
-            android:textSize="14sp"
+            android:textSize="13sp"
             card_view:layout_constraintStart_toStartOf="parent"
-            card_view:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/tv_item_atd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="56dp"
-            android:fontFamily="@font/ptreguler"
-            android:textColor="@color/grey_font"
-            android:textSize="14sp"
-            card_view:layout_constraintStart_toEndOf="@+id/tv_atd"
-            card_view:layout_constraintTop_toTopOf="parent"
-            tools:text="29-05" />
-
-        <TextView
-            android:id="@+id/tv_item_departure"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="12dp"
-            android:fontFamily="@font/ptreguler"
-            android:textColor="@color/grey_font"
-            android:textSize="14sp"
-            card_view:layout_constraintStart_toStartOf="parent"
-            card_view:layout_constraintTop_toBottomOf="@+id/tv_atd"
-            tools:text="Jakarta" />
-
-        <TextView
-            android:id="@+id/tv_eta"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="200dp"
-            android:layout_marginTop="56dp"
-            android:fontFamily="@font/ptreguler"
-            android:text="@string/eta"
-            android:textColor="@color/grey_font"
-            android:textSize="14sp"
-            card_view:layout_constraintStart_toStartOf="parent"
-            card_view:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/tv_item_eta"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="56dp"
-            android:fontFamily="@font/ptreguler"
-            android:textColor="@color/grey_font"
-            android:textSize="14sp"
-            card_view:layout_constraintStart_toEndOf="@+id/tv_eta"
-            card_view:layout_constraintTop_toTopOf="parent"
-            tools:text="29-05" />
-
-        <TextView
-            android:id="@+id/tv_item_arrival"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="122dp"
-            android:fontFamily="@font/ptreguler"
-            android:textColor="@color/grey_font"
-            android:textSize="14sp"
-            card_view:layout_constraintEnd_toEndOf="parent"
-            card_view:layout_constraintTop_toBottomOf="@+id/tv_item_eta"
-            tools:text="Surabaya" />
+            card_view:layout_constraintTop_toTopOf="@+id/logo_ship"
+            tools:text="MMSI" />
 
         <Button
             android:id="@+id/btn_track_detail"
-            android:layout_width="130dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="152dp"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="16dp"
             android:backgroundTint="@color/blue_secondary"
             android:fontFamily="@font/ptreguler"
             android:text="@string/track_detail"
             android:textColor="@color/white"
-            android:textSize="11sp"
-            card_view:layout_constraintEnd_toStartOf="@+id/btn_vessel_detail"
-            card_view:layout_constraintHorizontal_bias="0.579"
-            card_view:layout_constraintStart_toStartOf="parent"
-            card_view:layout_constraintTop_toTopOf="parent" />
+            android:textSize="8sp"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintTop_toTopOf="@+id/tv_item_name" />
 
         <Button
             android:id="@+id/btn_vessel_detail"
-            android:layout_width="130dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="152dp"
-            android:layout_marginEnd="48dp"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
             android:backgroundTint="@color/blue_secondary"
             android:fontFamily="@font/ptreguler"
             android:text="@string/vessel_detail"
             android:textColor="@color/white"
-            android:textSize="11sp"
+            android:textSize="8sp"
             card_view:layout_constraintEnd_toEndOf="parent"
-            card_view:layout_constraintTop_toTopOf="parent" />
+            card_view:layout_constraintTop_toBottomOf="@+id/btn_track_detail" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

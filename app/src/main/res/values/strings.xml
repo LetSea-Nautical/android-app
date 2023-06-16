@@ -29,4 +29,7 @@
     <string name="track_detail">TRACK DETAIL</string>
     <string name="atd">ATD</string>
     <string name="eta">ETA</string>
+    <string name="logout">LOGOUT</string>
+    <string name="edit_password">EDIT PASSWORD</string>
+    <string name="change_password">CHANGE PASSWORD</string>
 </resources>
